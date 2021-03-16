@@ -94,13 +94,13 @@ public class Field extends JPanel {
             InterruptedException {
 
         if (paused) {
-            if (ball.getRadius() < 10)
+            if (ball.getRadius() > 30)
                 wait();
         }
         if(paused1)
             if(resumeLol)
             {
-                if (ball.getRadius() > 10)
+                if (ball.getRadius() < 30)
                     wait();
             }
             else

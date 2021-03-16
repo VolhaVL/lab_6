@@ -57,7 +57,7 @@ public class MainFrame extends JFrame {
 
         JMenu controlMenu = new JMenu("Управление");
         menuBar.add(controlMenu);
-        Action pause2Action = new AbstractAction("Приостановить движение мячей малого радиуса"){
+        Action pause2Action = new AbstractAction("Приостановить движение мячей большого радиуса"){
             public void actionPerformed(ActionEvent event) {
                 field.pause();
                 pauseMenuItem.setEnabled(true);
@@ -96,7 +96,7 @@ public class MainFrame extends JFrame {
         resumeMenuItem = controlMenu.add(resumeAction);
         resumeMenuItem.setEnabled(false);
 
-        Action pause1Action = new AbstractAction("Возобновить движение мячей малого радиуса"){
+        Action pause1Action = new AbstractAction("Возобновить движение мячей большого радиуса"){
             public void actionPerformed(ActionEvent event) {
                 field.resumeLol();
                 pauseMenuItem.setEnabled(true);
