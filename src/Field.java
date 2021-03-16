@@ -29,7 +29,7 @@ public class Field extends JPanel {
     // Конструктор класса BouncingBall
     public Field() {
         // Установить цвет заднего фона белым
-        setBackground(Color.WHITE);
+        setBackground(Color.BLACK);
         // Запустить таймер
         repaintTimer.start();
     }

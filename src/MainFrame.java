@@ -1,5 +1,4 @@
-import java.awt.BorderLayout;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.Action;
@@ -37,6 +36,7 @@ public class MainFrame extends JFrame {
         // Создать меню
         JMenuBar menuBar = new JMenuBar();
         setJMenuBar(menuBar);
+        menuBar.setBackground(Color.ORANGE);
         JMenu ballMenu = new JMenu("Мячи");
         Action addBallAction = new AbstractAction("Добавить мяч") {
             public void actionPerformed(ActionEvent event) {
